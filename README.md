@@ -1,7 +1,7 @@
 <h1>CatoGenerator</h1>
 <strong>Генератор случайных изображений котов</strong>
 <div align="center">
-    <img src="app_screenshot.png" style="height: 500px; width: 200px;">
+    <img src="docs/app_screenshot.png" style="height: 500px; width: 200px;">
 </div>
 ## Tech stack
     - [Jetpack Compose]((https://developer.android.com/jetpack/compose)) - Android Ui
