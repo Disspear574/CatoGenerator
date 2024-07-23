@@ -1,8 +1,5 @@
 package cats.presentation
 
-import android.net.http.HttpException
-import androidx.compose.runtime.State
-import androidx.compose.runtime.mutableStateOf
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
 import cats.domain.usecase.GenerateNewCatUseCase
@@ -10,7 +7,6 @@ import cats.domain.usecase.GetCatUseCase
 import dagger.hilt.android.lifecycle.HiltViewModel
 import kotlinx.coroutines.flow.MutableStateFlow
 import kotlinx.coroutines.flow.StateFlow
-import kotlinx.coroutines.flow.flow
 import kotlinx.coroutines.flow.update
 import kotlinx.coroutines.launch
 import javax.inject.Inject
@@ -29,7 +25,6 @@ class CatsViewModel @Inject constructor(
 
     private fun getCats() {
         viewModelScope.launch {
-
             try {
                 val result = getCatUseCase.execute()
                 if (result.image.isNotEmpty()) {
@@ -41,7 +36,6 @@ class CatsViewModel @Inject constructor(
                     it.copy(error = "Exception : $error, \n Проверьте подключение к интернету")
                 }
             }
-
         }
     }
 
@@ -50,9 +44,8 @@ class CatsViewModel @Inject constructor(
             try {
                 generateNewCatUseCase.execute()
                 getCats()
-            } catch (_: Exception) {}
-
-
+            } catch (_: Exception) {
+            }
         }
     }
 }

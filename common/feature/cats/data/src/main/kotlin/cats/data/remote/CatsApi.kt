@@ -9,5 +9,4 @@ interface CatsApi {
 
     @GET("/v1/images/search")
     suspend fun getRandomCat(): CatDto
-
 }

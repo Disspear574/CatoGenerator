@@ -23,8 +23,6 @@ android {
                 .toInt()
 
         testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
-
-//                consumerProguardFiles("consumer-rules.pro")
     }
 
     buildTypes {
@@ -44,5 +42,4 @@ android {
 dependencies {
     implementation(libs.dagger.hilt.android)
     ksp(libs.dagger.hilt.compiler)
-
 }

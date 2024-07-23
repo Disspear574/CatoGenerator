@@ -10,6 +10,8 @@ import androidx.compose.ui.layout.ContentScale
 import androidx.compose.ui.unit.dp
 import coil.compose.AsyncImage
 
+private const val ASPECT_RATIO = 4f / 3f
+
 @Composable
 internal fun CatImage(img: String?) {
     AsyncImage(
@@ -18,7 +20,7 @@ internal fun CatImage(img: String?) {
         contentScale = ContentScale.Crop,
         modifier = Modifier
             .fillMaxWidth()
-            .aspectRatio(4f / 3f)
+            .aspectRatio(ASPECT_RATIO)
             .clip(RoundedCornerShape(12.dp))
     )
 }

@@ -24,8 +24,6 @@ android {
                 .toInt()
 
         testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
-
-//                consumerProguardFiles("consumer-rules.pro")
     }
 
     buildTypes {
@@ -53,8 +51,6 @@ dependencies {
     implementation(libs.androidx.material3)
     implementation(libs.androidx.ui.tooling.preview)
     implementation(libs.coil)
-    implementation(libs.koin.core)
-    implementation(libs.koin.compose)
     implementation(libs.lifecycle.compose)
     implementation(libs.lifecycle.compose.viewmodel)
     implementation(libs.icons.extended)

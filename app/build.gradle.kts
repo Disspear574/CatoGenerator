@@ -60,6 +60,7 @@ dependencies {
     implementation(project(":common:feature:cats:presentation"))
     implementation(project(":common:feature:cats:data"))
     implementation(project(":common:feature:cats:domain"))
+
     implementation(libs.retrofit)
     implementation(libs.retrofit.gson)
     implementation(libs.dagger.hilt.android)

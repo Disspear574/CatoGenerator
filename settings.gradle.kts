@@ -1,12 +1,8 @@
+@file:Suppress("UnstableApiUsage")
+
 pluginManagement {
     repositories {
-        google {
-            content {
-                includeGroupByRegex("com\\.android.*")
-                includeGroupByRegex("com\\.google.*")
-                includeGroupByRegex("androidx.*")
-            }
-        }
+        google()
         mavenCentral()
         gradlePluginPortal()
     }
@@ -20,8 +16,8 @@ dependencyResolutionManagement {
 }
 
 rootProject.name = "CatoGenerator"
-include(":app")
 
+include(":app")
 include(":common:feature:cats:data")
 include(":common:feature:cats:domain")
 include(":common:feature:cats:presentation")

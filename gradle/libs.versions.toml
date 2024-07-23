@@ -3,7 +3,7 @@ compileSDK = "34"
 minSDK = "21"
 targetSDK = "35"
 
-agp = "8.5.1"
+agp = "8.2.2"
 kotlin = "2.0.0"
 coreKtx = "1.13.1"
 junit = "4.13.2"
@@ -13,10 +13,9 @@ lifecycleRuntimeKtx = "2.8.3"
 activityCompose = "1.9.0"
 composeBom = "2024.06.00"
 
-coil = "2.6.0"
+coil = "2.7.0"
 koin = "3.5.6"
 retrofit = "2.11.0"
-okhttp = "4.12.0"
 
 hilt = "2.51.1"
 ksp = "2.0.0-1.0.23"
@@ -45,16 +44,11 @@ lifecycle-compose-viewmodel = { module = "androidx.lifecycle:lifecycle-viewmodel
 icons-extended = { module = "androidx.compose.material:material-icons-extended", version.ref = "compose"}
 coil = { module = "io.coil-kt:coil-compose", version.ref = "coil"}
 coil-gif = { module = "io.coil-kt:coil-gif", version.ref = "coil"}
-koin-core = { module = "io.insert-koin:koin-core", version.ref = "koin" }
-koin-compose = { group = "io.insert-koin", name = "koin-androidx-compose", version.ref = "koin" }
 
 retrofit = { module = "com.squareup.retrofit2:retrofit", version.ref = "retrofit"}
 retrofit-gson = { module = "com.squareup.retrofit2:converter-gson", version.ref = "retrofit"}
-okhttp = { module = "com.squareup.okhttp3:okhttp", version.ref = "okhttp"}
 
 dagger-hilt-android = { group = "com.google.dagger", name = "hilt-android", version.ref = "hilt"}
-#dagger-hilt-android-compiler = { group = "com.google.dagger", name = "hilt-android-compiler", version.ref = "hilt-android-compiler"}
-#dagger-hilt-lifecycle = { group = "com.google.dagger", name = "hilt-lifecycle-viewmodel", version.ref = "hilt-lifecycle"}
 dagger-hilt-compiler = { group = "com.google.dagger", name = "hilt-compiler", version.ref = "hilt"}
 
 [plugins]

@@ -8,7 +8,7 @@ import javax.inject.Inject
 
 class CatRepositoryImpl @Inject constructor(
     private val api: CatsApi
-): CatRepository {
+) : CatRepository {
     override suspend fun getRandomCat(): CatModel = api.getRandomCat().toDomain()
 
     override suspend fun generateNewCat() {

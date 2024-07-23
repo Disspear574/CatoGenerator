@@ -29,6 +29,7 @@ import cats.presentation.components.CatImage
 import cats.presentation.components.CatsTopBar
 import ru.disspear574.cats.presentation.R
 
+@Suppress("MagicNumber")
 @Composable
 fun CatsScreen(
     vm: CatsViewModel = viewModel()
@@ -80,6 +81,5 @@ fun CatsScreen(
             Spacer(modifier = Modifier.height(16.dp))
             if (state.cat == null) state.error?.let { it1 -> Text(it1) }
         }
-
     }
 }
